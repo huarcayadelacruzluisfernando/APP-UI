@@ -1,15 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { Text, TouchableOpacity, View } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import AppNavigation from './navigation/appNavigation';
+
+// import { NavigationContainer } from '@react-navigation/native';
+// import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+// import HomeScreen from './screens/HomeScreen';
+// import GameStore from './screens/gameStore';
+
+// const Tab = createBottomTabNavigator();
+
 
 export default function App() {
   return (
-    <View className="flex-1 items-center justify-center bg-slate-800">
-      <TouchableOpacity className="bg-teal-500 p-3 rounded-lg">
-        <Text className="text-white text-3xl font-bold">Hello Luis!!</Text>
-      </TouchableOpacity>
-      <StatusBar style="light" />
-    </View>
-  );
-}
-
+    <AppNavigation/>
+  );}
